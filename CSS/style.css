@@ -1,0 +1,173 @@
+*{
+	margin: 300; /*espaço entre a borda e outro elemento pra cima pros lados e pra baixo */
+	padding: 250; /*espaço entre a borda e o conteudo do elemento em questão pra cima pros lados e pra baixo  */
+	border: 140%; /*espaço entre a margin e o padding*/
+	box-sizing: border-box;
+	color: #292724;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: #f2ecec;
+	text-align: justify;
+}
+.paragraph{
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+
+	padding-bottom: 20px;
+	
+	/*"text-indent:" faz um espaçamento para novo paragrafo */
+}
+.border{
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 5px;
+}
+
+
+.imgposition{
+	display: inline-block;
+	position: absolute;
+	bottom: -5px;
+	left: 85%;
+}
+.links{
+	text-decoration: none;
+}
+.links:hover{
+	color: #6d6b6a;	
+}
+.socmeda{
+	text-decoration: none
+
+}
+.socmeda:hover{
+	color: #6d6b6a;
+
+}
+.socmedli{
+	list-style: none;
+}
+.socmedimg{
+	width: 50px;
+	height: 50px;
+}
+.table-container{
+	display: inline-block;
+
+	max-width: 600px;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	padding-bottom: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 5px;
+
+}
+
+.lastbutton{
+	
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 50px;
+	right: 1%;
+	text-align: center;	
+
+}
+#totopbutton{
+		font-size: 15px;
+  	width:145px;
+  	height:40px;
+  	border-width:2px;
+  	border-top-left-radius:15px;
+  	border-top-right-radius:15px;
+  	border-bottom-left-radius:15px;
+  	border-bottom-right-radius:15px;
+  	
+}
+
+#totopbutton:hover {
+  background: linear-gradient(#bab1ba, #ededed);
+}
+
+#tname{
+	
+	text-align: center;
+}
+#ing{
+	padding-right: 30px;
+}
+#me{
+	width: 150px;
+	border-radius: 50%;
+	border-width: 3px;
+	border-style: solid;
+}
+
+h2{
+	text-align: center;
+	color: #171616;
+	margin: 10 0px;
+}
+h3{
+	font-size: 22px;
+	color: #171616;
+}
+ul{
+	padding: 0 15px;
+}
+th, td{
+	padding-right: 30px;
+}
+
+@media screen and (max-width: 625px){
+	.imgposition{
+		display: flex;
+		left: 0;
+		right: 0;
+		bottom: auto;
+		justify-content: center;
+		/*resolvido!! eu tinha esquecido de alterar o left kkkkkkk */
+	}
+	.info{
+		padding-top: 130px;		
+	}
+
+}
+@media (max-width: 480px){
+	.table thead{
+		display:  none;
+	}
+	.table, table tbody,.table tr,.table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom: 15px;
+	}
+	.table tbody tr td{
+		text-align: right;
+		padding-left: 50%;
+		position: relative;
+	}
+	.table td:before{
+		content: attr(data-label);
+		position: absolute;
+		left: 0;
+		width: 50%;
+		padding-left: 15px;
+		font-weight: 600;
+		font-size: 18px;
+		text-align: left;
+	}
+	#ing{
+		padding-right: 0;
+	}
+}
