@@ -1,3 +1,3 @@
 # sitecurriculo
 
-apenas para teste
+Apenas para teste... vou melhorando com o tempo.
